@@ -2,13 +2,14 @@ package com.zut;
 
 public class Main {
     public static void main(String[] args) {
-        BankAccout jacobsAccout = new BankAccout(); // instantiation
 
-        jacobsAccout.accountHolder = "Jacob";
-        jacobsAccout.balance = 100;
+        BankAccount jacobsAccount = new BankAccount();
 
-        System.out.println("Before Deposit: " + jacobsAccout.balance);
-        jacobsAccout.deposit(100);
-        System.out.println("After Deposit: " + jacobsAccout.balance);
+        jacobsAccount.accountHolder = "Jacob";
+        jacobsAccount.balance = 1;
+
+        System.out.println("Before Deposit: " + jacobsAccount.balance);
+        jacobsAccount.deposit(1000);
+        System.out.println("After Deposit: " + jacobsAccount.balance);
     }
 }
